@@ -37,9 +37,12 @@
   <body>
     <div>
         <form id="raidForm">
+            <label for="encrypted-code">CRYPT KEY: </label>
+            <input type="text" id="key" name="key" maxlength=6></input>
+            <br />
             <label for="encrypted-code">RAID CODE:</label>
             <input type="text" id="code" name="code" maxlength=6></input>
-            <button id="codeSubmit" name="decrypt">Decrypt</button>
+            <button id="formSubmit" name="decrypt">Decrypt</button>
         </form>
         <br />
         <span>Decrypted code: </span><span class="decrypted-code-output"></span>
